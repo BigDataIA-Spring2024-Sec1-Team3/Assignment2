@@ -162,3 +162,4 @@ cython_debug/
 # custom
 configuration.properties
 .DS_Store
+__init.py__
