@@ -96,11 +96,11 @@ Before running this project, ensure you have the following prerequisites set up:
 │   └── upload_to_db.ipynb
 ├── diagrams-and-script
 │   ├── flow_diagram.ipynb
-│   └── flow_diagram.png
-├── input-icons
-│   ├── local_storage.png
-│   ├── snowflake.png
-│   └── website.png
+│   ├── flow_diagram.png
+│   └── input-icons
+│       ├── local_storage.png
+│       ├── snowflake.png
+│       └── website.png
 ├── pdf-extractions
 │   ├── config.json
 │   ├── grobid
@@ -117,17 +117,17 @@ Before running this project, ensure you have the following prerequisites set up:
 │       ├── PyPDF_RR_2024_l2_combined.txt
 │       └── PyPDF_RR_2024_l3_combined.txt
 ├── requirements.txt
-└── screenshots
-    └── s3
-        └── cfa_data_s3.png
-        └── grobid_s3.png
-        └── pypdf_s3.png
-        └── s3_bucket_structure.png
-    └── snowflake
-        └── snowflake_cfa_refresher_readings.png
-        └── snowflake_grobid_metadata.png
+├── screenshots
+│   ├── s3
+│   │   ├── cfa_data_s3.png
+│   │   ├── grobid_s3.png
+│   │   ├── pypdf_s3.png
+│   │   └── s3_bucket_structure.png
+│   └── snowflake
+│       ├── snowflake_cfa_refresher_readings.png
+│       └── snowflake_grobid_metadata.png
 └── web-scraping-and-dataset
-    └── scraped_data.csv
+    ├── scraped_data.csv
     └── web_scrape.ipynb
 ```
 
