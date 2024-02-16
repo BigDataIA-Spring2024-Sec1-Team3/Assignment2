@@ -1,7 +1,3 @@
-Authors: 
-Keywords: 
-Copyright: © CFA Institute. For candidate use only. Not for distribution.
-
 E7BD4E4FA567D6C4DF9DD2A90C1CD577
 
 			
@@ -166,6 +162,7 @@ Analysis of Active Portfolio Management
 The candidate should be able to:
 □ describe how value added by active management is measured □ calculate and interpret the information ratio (ex post and ex ante) and contrast it to the Sharpe ratio □ describe and interpret the fundamental law of active portfolio management, including its component terms-transfer coefficient, information coefficient, breadth, and active risk (aggressiveness) □ explain how the information ratio may be useful in investment manager selection and choosing the level of active portfolio risk □ compare active management strategies, including market timing and security selection, and evaluate strategy changes in terms of the fundamental law of active management □ describe the practical strengths and limitations of the fundamental law of active management
 identify and explain steps in a data analysis project □ describe objectives, steps, and examples of preparing and wrangling data □ evaluate the fit of a machine learning algorithm □ describe objectives, methods, and examples of data exploration □ describe methods for extracting, selecting and engineering features from textual data □ describe objectives, steps, and techniques in model training □ describe preparing, wrangling, and exploring text-based data for financial forecasting
+© CFA Institute. For candidate use only. Not for distribution.
 
 			
 

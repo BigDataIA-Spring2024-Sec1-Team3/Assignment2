@@ -1,7 +1,3 @@
-Authors: 
-Keywords: 
-Copyright: © CFA Institute. For candidate use only. Not for distribution.
-
 BD4A63060A9D7A1A09FFB3F7114CA6E0
 
 			
@@ -162,6 +158,7 @@ The candidate should be able to:
 □ explain the main functions of the financial system □ describe classifications of assets and markets □ describe the major types of securities, currencies, contracts, commodities, and real assets that trade in organized markets, including their distinguishing characteristics and major subtypes □ describe types of financial intermediaries and services that they provide □ compare positions an investor can take in an asset □ calculate and interpret the leverage ratio, the rate of return on a margin transaction, and the security price at which the investor would receive a margin call □ compare execution, validity, and clearing instructions □ compare market orders with limit orders □ define primary and secondary markets and explain how secondary markets support primary markets □ describe how securities, contracts, and currencies are traded in quote-driven, order-driven, and brokered markets □ describe characteristics of a well-functioning financial system □ describe objectives of market regulation
 Security Market Indexes
 The candidate should be able to:
+□ describe a security market index © CFA Institute. For candidate use only. Not for distribution.
 □ calculate and interpret the value, price return, and total return of an index □ describe the choices and issues in index construction and management □ compare the different weighting methods used in index construction □ calculate and analyze the value and return of an index given its weighting method □ describe rebalancing and reconstitution of an index □ describe uses of security market indexes □ describe types of equity indexes □ compare types of security market indexes □ describe types of fixed-income indexes □ describe indexes representing alternative investments
 Market Efficiency
 The candidate should be able to:
@@ -292,6 +289,7 @@ The candidate should be able to:
 Introduction to Digital Assets
 The candidate should be able to:
 □ describe financial applications of distributed ledger technology □ explain investment features of digital assets and contrast them with other asset classes □ describe investment forms and vehicles used in digital asset investments □ analyze sources of risk, return, and diversification among digital asset investments
+© CFA Institute. For candidate use only. Not for distribution.
 
 			
 
