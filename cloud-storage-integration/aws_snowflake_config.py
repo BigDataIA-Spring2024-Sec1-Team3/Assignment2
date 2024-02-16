@@ -1,6 +1,5 @@
 import configparser
 import boto3
-import snowflake.connector
 
 def getProp():
 	global config
@@ -23,19 +22,16 @@ def aws_s3_connection():
         
 def snowflake_connection():
     try:
-        getProp()
-        connection_name='SNOWFLAKE'
-        snowflake_connection = snowflake.connector.connect(
-            user=config.get(connection_name, 'User'),
-            password=config.get(connection_name, 'Password'),
-            account=config.get(connection_name, 'Account'),
-            warehouse=config.get(connection_name, 'Warehouse'),
-            database=config.get(connection_name, 'Database'),
-            schema=config.get(connection_name, 'Schema')
-        )
-        print('Successfully Connected to Snowflake')   
-        return snowflake_connection
+        getProp()        
+        user=config['SNOWFLAKE']['User']
+        password=config['SNOWFLAKE']['Password']
+        account=config['SNOWFLAKE']['Account']
+        warehouse=config['SNOWFLAKE']['Warehouse']
+        database=config['SNOWFLAKE']['Database']
+        schema=config['SNOWFLAKE']['Schema']
+
+        return user, password, account, warehouse, database, schema
     except Exception as e:
         print(e)
-        print('Not connected to snowflake')
+        print('Cannot get snowflake credentials.check configuration properties')
     return 'Failed Connection'
