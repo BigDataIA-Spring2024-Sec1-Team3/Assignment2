@@ -1,7 +1,9 @@
-# Live Application Links
-- [Snowflake](https://www.snowflake.com/)
-- [AWS S3](https://aws.amazon.com/s3/)
-- [Google Codelabs](https://codelabs.developers.google.com/)
+## Live Application Links
+[![codelabs](https://img.shields.io/badge/codelabs-4285F4?style=for-the-badge&logo=codelabs&logoColor=white)](https://codelabs-preview.appspot.com/?file_id=19jStdfDXWfG7Pvma_-KPqHT0EoVaYVVE0Rfmbh3zW8g#0)
+
+[![Snowflake](https://img.shields.io/badge/Snowflake-366DBF?style=for-the-badge&logo=snowflake&logoColor=white)](https://www.snowflake.com/)
+
+[![AWS S3](https://img.shields.io/badge/AWS_S3-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)](https://aws.amazon.com/s3/)
 
 ## Problem Statement
 The goal of this project is to design and implement a robust data engineering framework that consolidates, organizes, and provides easy access to a wide range of financial professional development resources, which will cater in the future to aid a curated learning experience.
@@ -28,16 +30,15 @@ This project is designed to leverage advanced data engineering techniques for th
    - Additionally, metadata extracted in the PDF phase will be uploaded to the Snowflake database using SQLAlchemy, with the process thoroughly documented in a Python notebook for transparency and ease of understanding.
 
 ## Technologies Used
-- [Python](https://www.python.org/)
-- [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-- [Scrapy](https://docs.scrapy.org/)
-- [PyPDF2](https://pythonhosted.org/PyPDF2/)
-- [Grobid](https://github.com/kermitt2/grobid)
-- [Docker](https://docs.docker.com/)
-- [Snowflake](https://www.snowflake.com/)
-- [AWS S3](https://aws.amazon.com/s3/)
-- [SQLAlchemy](https://www.sqlalchemy.org/)
-
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Beautiful Soup](https://img.shields.io/badge/Beautiful_Soup-4CA3DD?style=for-the-badge&logo=beautifulsoup&logoColor=white)](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+[![Scrapy](https://img.shields.io/badge/Scrapy-1F4C9F?style=for-the-badge&logo=scrapy&logoColor=white)](https://docs.scrapy.org/)
+[![PyPDF2](https://img.shields.io/badge/PyPDF2-336791?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://pythonhosted.org/PyPDF2/)
+[![Grobid](https://img.shields.io/badge/Grobid-007396?style=for-the-badge&logo=git&logoColor=white)](https://github.com/kermitt2/grobid)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docs.docker.com/)
+[![Snowflake](https://img.shields.io/badge/Snowflake-366DBF?style=for-the-badge&logo=snowflake&logoColor=white)](https://www.snowflake.com/)
+[![AWS S3](https://img.shields.io/badge/AWS_S3-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)](https://aws.amazon.com/s3/)
+[![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-4A569D?style=for-the-badge&logo=sqlalchemy&logoColor=white)](https://www.sqlalchemy.org/)
 
 ## Data Sources
 The data sources utilized in this assignment are as follows:
@@ -48,32 +49,52 @@ The data sources utilized in this assignment are as follows:
 
 These sources are pivotal for creating a rich dataset and extracting valuable insights for the finance professional community.
 
-
 ## Pre-requisites
 Before running this project, ensure you have the following prerequisites set up:
 
 - **Python**: Ensure Python is installed on your system.
 - **Virtual Environment**: Set up a virtual environment to manage dependencies and isolate your project's environment from other Python projects. You can create a virtual environment using `virtualenv` or `venv`.
-- **requirements.txt**: Install the required Python dependencies by running `pip install -r requirements.txt`.
+- **requirements.txt**: Install the required Python dependencies by running the command:
+  ```
+  pip install -r requirements.txt
+  ```
 - **Config File**: Set up the `configurations.properties` file with the necessary credentials and configurations.
-- **Docker**: Docker setup is required for running the Grobid server.
-- **Graphviz**: Graphviz is needed for generating the architecture diagram. If you're using macOS, you can install it via Homebrew: `brew install graphviz`. For Windows users, you can install it using Chocolatey: `choco install graphviz`.
+- **Grobid**: Docker setup is required for running the Grobid server.
+  
+  Pull the image from docker HUB 
+  ```
+  docker pull lfoppiano/grobid:0.8.0
+  ```
+  Run the container:
+  ```
+  docker run --rm --init --ulimit core=0 -p 8070:8070 lfoppiano/grobid:0.8.0
+  ```
+  From there, you can check on your browser if the service works fine by   accessing the welcome page of the service console, available at the URL http://localhost:8070.
+- **Graphviz**: Graphviz is needed for generating the architecture diagram.
+ 
+  On Windows:
+  ```
+  choco install graphviz
+  ```
+  On macOS and Linux:
+  ```
+  brew install graphviz
+  ```
 - **AWS S3**: Set up an IAM user with appropriate permissions for accessing S3 buckets. Ensure you have the necessary access keys and secrets configured in your AWS CLI or SDK. 
 - **Snowflake**: Create a Snowflake warehouse, database, and schema. Ensure you have the necessary credentials and configurations set up in the `configurations.properties` file for connecting to Snowflake.
 
 ## Program Structure
-📦 Assignment2
+```
+.
 ├── .gitignore
 ├── README.md
 ├── cloud-storage-integration
 │   ├── aws_snowflake_config.py
 │   ├── cloud-integration.ipynb
-│   ├── grobid_text_metadata.csv
 │   └── metadata-grobid.csv
 ├── database-upload
 │   └── upload_to_db.ipynb
 ├── diagrams-and-script
-│   ├── README.md
 │   ├── flow_diagram.ipynb
 │   └── flow_diagram.png
 ├── input-icons
@@ -81,7 +102,6 @@ Before running this project, ensure you have the following prerequisites set up:
 │   ├── snowflake.png
 │   └── website.png
 ├── pdf-extractions
-│   ├── README.md
 │   ├── config.json
 │   ├── grobid
 │   │   ├── Grobid_RR_2024_l1_combined.txt
@@ -98,9 +118,18 @@ Before running this project, ensure you have the following prerequisites set up:
 │       └── PyPDF_RR_2024_l3_combined.txt
 ├── requirements.txt
 └── screenshots
+    └── s3
+        └── cfa_data_s3.png
+        └── grobid_s3.png
+        └── pypdf_s3.png
+        └── s3_bucket_structure.png
+    └── snowflake
+        └── snowflake_cfa_refresher_readings.png
+        └── snowflake_grobid_metadata.png
 └── web-scraping-and-dataset
     └── scraped_data.csv
     └── web_scrape.ipynb
+```
 
 ## How to Run the Application Locally
 Follow these steps to run the application locally from scratch:
@@ -121,7 +150,8 @@ Activate the virtual environment:
 
 3. **Web Scraping**: Run `web_scrape.ipynb` first to scrape data from the web and save it into a CSV file.
 
-4. **Grobid Setup**: Setup Docker and install a lightweight image of Grobid to run the Grobid server.
+4. **Grobid Setup**: Run the docker container to start the Grobid server. You can check whether the service is up and running by opening the following URL:
+http://localhost:8070/
 
 5. **PDF Extractions**: Run `pdf_extractions_pypdf_grobid.ipynb` to extract text from PDF files using PyPDF2 and Grobid.
 
@@ -146,11 +176,9 @@ By completing this assignment, you will:
   
 - **Utilize Cloud Storage**: Understand how to upload and manage files in cloud storage services like AWS S3, and integrate them with database systems.
 
-##Team Information and Contribution
-## Contribution
-
+## Team Information and Contribution
 | Name                       | Contribution % |
 |----------------------------|----------------|
-| Muskan Deepak Raisinghani  | 33%            |
-| Ritesh Choudhary           | 33%            |
+| Muskan Deepak Raisinghani  | 35%            |
 | Rachana Keshav             | 33%            |
+| Ritesh Choudhary           | 32%            |
