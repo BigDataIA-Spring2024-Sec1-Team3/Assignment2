@@ -179,6 +179,6 @@ By completing this assignment, you will:
 ## Team Information and Contribution
 | Name                       | Contribution % |
 |----------------------------|----------------|
-| Muskan Deepak Raisinghani  | 35%            |
-| Rachana Keshav             | 33%            |
-| Ritesh Choudhary           | 32%            |
+| Muskan Deepak Raisinghani  | 41%            |
+| Rachana Keshav             | 34%            |
+| Ritesh Choudhary           | 25%            |
